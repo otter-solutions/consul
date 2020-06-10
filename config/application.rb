@@ -16,43 +16,22 @@ module Consul
     # Run "rake -D time" for a list of tasks for finding time zone names. Default is UTC.
     # config.time_zone = 'Central Time (US & Canada)'
 
+    config.i18n.locale = :"pt-BR"
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
-    config.i18n.default_locale = :en
+    config.i18n.default_locale = :"pt-BR" 
     available_locales = [
-      "ar",
-      "bs",
-      "cs",
-      "da",
-      "de",
-      "el",
+      "pt-BR",
       "en",
       "es",
-      "fa",
-      "fr",
-      "gl",
-      "he",
-      "hr",
-      "id",
-      "it",
-      "nl",
-      "pl",
-      "pt-BR",
-      "ru",
-      "sl",
-      "sq",
-      "so",
-      "sv",
-      "tr",
-      "val",
-      "zh-CN",
-      "zh-TW"]
+      "pt"
+    ]
     config.i18n.available_locales = available_locales
     config.i18n.fallbacks = {
       "fr"    => "es",
       "gl"    => "es",
       "it"    => "es",
-      "pt-BR" => "es"
+      "pt-BR" => "en"
     }
 
     config.i18n.load_path += Dir[Rails.root.join("config", "locales", "**[^custom]*", "*.{rb,yml}")]
@@ -68,7 +47,7 @@ module Consul
 
     # Add lib to the autoload path
     config.autoload_paths << Rails.root.join("lib")
-    config.time_zone = "Madrid"
+    config.time_zone = "Brasilia"
     config.active_job.queue_adapter = :delayed_job
 
     # CONSUL specific custom overrides
