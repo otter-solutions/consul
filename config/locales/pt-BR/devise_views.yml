@@ -50,6 +50,10 @@ pt-BR:
         success:
           back_to_index: Eu entendo; voltar à página principal
           title: Registro de organização / coletivo
+          thank_you: Obrigado
+          instructions_1:
+          instructions_2:
+
     passwords:
       edit:
         change_submit: Altere minha senha
@@ -118,4 +122,4 @@ pt-BR:
           username_note: Nome que aparece junto a seus posts
         success:
           back_to_index: Eu entendo; voltar à página principal
-          title: Modifique seu email
+          title:
