@@ -122,4 +122,5 @@ pt-BR:
           username_note: Nome que aparece junto a seus posts
         success:
           back_to_index: Eu entendo; voltar à página principal
-          title:
+          title: ""
+          thank_you: Agradecemos
